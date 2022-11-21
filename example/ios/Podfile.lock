@@ -1,0 +1,29 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_libpd (0.0.1):
+    - Flutter
+    - libpd_ios (= 0.12.3)
+  - libpd_ios (0.12.3)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_libpd (from `.symlinks/plugins/flutter_libpd/ios`)
+
+SPEC REPOS:
+  trunk:
+    - libpd_ios
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_libpd:
+    :path: ".symlinks/plugins/flutter_libpd/ios"
+
+SPEC CHECKSUMS:
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  flutter_libpd: e4d7d75c71ea2ccce75b21f76f9a5a66412ec41f
+  libpd_ios: d23817c443f35a00f6b59d91b02b4f2a54cc64af
+
+PODFILE CHECKSUM: 2b3f662923c8d58b628fa5cc90259c46596d4fcd
+
+COCOAPODS: 1.11.3
