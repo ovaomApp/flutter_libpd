@@ -12,14 +12,14 @@ void main() {
 
   setUp(() {
     logs = <MethodCall>[];
-    TestDefaultBinaryMessengerBinding.instance!.defaultBinaryMessenger
+    TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
         .setMockMethodCallHandler(
             platform.methodChannel, (methodCall) async => logs.add(methodCall));
   });
 
   tearDown(() {
     logs.clear();
-    TestDefaultBinaryMessengerBinding.instance!.defaultBinaryMessenger
+    TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
         .setMockMethodCallHandler(platform.methodChannel, null);
   });
 
@@ -260,7 +260,7 @@ void main() {
 // Helpers
 
 void _eventChannelSendsMessage(EventChannel eventChannel, dynamic data) async {
-  TestDefaultBinaryMessengerBinding.instance!.defaultBinaryMessenger
+  TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
       .handlePlatformMessage(eventChannel.name,
           eventChannel.codec.encodeSuccessEnvelope(data), null);
 }
